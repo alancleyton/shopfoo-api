@@ -8,12 +8,17 @@
     "module": "node16",
     "rootDir": "src",
     "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
     "types": ["node"],
+    "allowImportingTsExtensions": true,
 
     /* JavaScript Support */
     "allowJs": true,
 
     /* Emit */
+    "noEmit": true,
     "outDir": "build",
 
     /* Interop Constraints */
