@@ -1,7 +1,8 @@
-export class Foo {
-  public msg: string;
+import { app } from '@src/app';
 
-  constructor(msg: string) {
-    this.msg = msg;
-  }
-}
+const PORT = 3333;
+
+app.listen(PORT, () =>
+  // eslint-disable-next-line
+  console.log(`server is running at: http://localhost:${PORT}!`),
+);
