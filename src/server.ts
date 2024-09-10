@@ -4,5 +4,5 @@ const PORT = 3333;
 
 app.listen(PORT, () =>
   // eslint-disable-next-line
-  console.log(`server is running at: http://localhost:${PORT}!`),
+  console.log(`✅ server is running at: http://localhost:${PORT}!`),
 );
