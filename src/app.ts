@@ -4,7 +4,7 @@ import express from 'express';
 import cors from 'cors';
 
 import { routes } from '@src/routes/router';
-import { errorsMiddleware } from '@src/shared/middlewares/errors-middleware';
+import { errorsMiddleware } from '@src/middlewares/errors-middleware';
 
 const app = express();
 

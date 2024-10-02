@@ -1,5 +1,5 @@
 import { app } from '@src/app';
-import { initializeDBConnection } from '@src/shared/database/typeorm/data-source';
+import { initializeDBConnection } from '@src/database/typeorm/data-source';
 
 const PORT = process.env.PORT || 3333;
 
