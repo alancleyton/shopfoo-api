@@ -1,8 +1,12 @@
 import { app } from '@src/app';
+import { initializeDBConnection } from '@src/shared/database/typeorm/data-source';
 
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
-app.listen(PORT, () =>
-  // eslint-disable-next-line
-  console.log(`✅ server is running at: http://localhost:${PORT}!`),
-);
+(async () => {
+  await initializeDBConnection();
+  app.listen(PORT, () =>
+    // eslint-disable-next-line
+    console.log(`✅ server is running at: http://localhost:${PORT}!`),
+  );
+})();
